@@ -4,7 +4,7 @@ In Hacktober Fest 2022, We are back with a simple yet exciting project for all t
 
 ##### Read the [Contributing.md](https://github.com/clubgamma/task-tracker/blob/main/CONTRIBUTING.md) file for all about how to start contributing to the project.
 
-#####Resources-
+##### Resources -
 
 1. UI design for the project can be found [here](https://www.figma.com/file/kPKeq2EbtLPUjrNNpykOYa/Hacktoberfest-2022-React-Native-Todo-List?node-id=0%3A1). Please follow it.
 2. [Expo](https://docs.expo.dev/)

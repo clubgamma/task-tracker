@@ -10,6 +10,8 @@ In Hacktober Fest 2022, We are back with a simple yet exciting project for all t
 2. [Expo](https://docs.expo.dev/)
 3. [React Native](https://reactnative.dev/docs/environment-setup)
 
+[Register for Hacktoberfest 2022](https://hacktoberfest.com/register/)
+
 ## Contact Us
 
 **To know more about us, visit [official website](https://clubgamma.github.io/) of Club Gamma.**

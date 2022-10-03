@@ -13,6 +13,7 @@ export default function App() {
     <View style={styles.body}>
     <Header/>
     <Stack.Navigator>
+    <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen
           name="Login"
           component={Login}
@@ -22,7 +23,7 @@ export default function App() {
           component={Home}
           options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="Signup" component={Signup} />
+       
       </Stack.Navigator>
     </View>
     </NavigationContainer>

@@ -6,9 +6,12 @@ export default function Login({route, navigation}) {
     const [cred,setCred] = useState({username:"",password:""})
     const allusers = route.params
     const loginHandler = () =>{
-      var found;
-      const search = () => allusers['allusers']?.find(singleuser =>  singleuser['user']?.username === cred?.username && singleuser['user']?.password === cred?.password )
-      found = search()
+      var found; 
+      if(allusers){
+       const search = () => allusers['allusers']?.find(singleuser =>  singleuser['user']?.username === cred?.username && singleuser['user']?.password === cred?.password )
+       found = search()
+      }
+      
       if(cred.username === "" || cred.password === ""){
         Alert.alert('OOPS', 'Input fields cannot be empty!', [
           {text: 'Understood', onPress: () => console.log('alert closed') }

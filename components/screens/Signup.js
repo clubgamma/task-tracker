@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect, useRef } from 'react'
-import { StyleSheet, View, TextInput, Button,Image ,ScrollView,Text,Alert, TouchableWithoutFeedback,Keyboard} from 'react-native'
+import { StyleSheet, View, TextInput, Button,Image ,ScrollView,Text,Alert,TouchableOpacity ,TouchableWithoutFeedback,Keyboard} from 'react-native'
 import {Card} from 'react-native-paper'
 import logo from '../../assets/log2.png'
 export default function Signup({navigation}) {
@@ -13,7 +13,6 @@ export default function Signup({navigation}) {
         isFirstRender.current = false;
         return; // 👈️ return early if initial render
       }
-       console.log("all ",allusers)
        setUser({firstName:"",lastName:"",email:"",username:"",password:""})
        Alert.alert('Success','Registeration successfull!', [
       {text: 'ok', onPress: () => {navigation.navigate('Login',{allusers})} }
@@ -100,7 +99,11 @@ export default function Signup({navigation}) {
         onChangeText={(text) => setUser({...user, password: text})}
       />
        <Button color='coral'  onPress={() => {submitHandler(user)}} title='SignUp' />
-       
+       <TouchableOpacity onPress={()=>{navigation.navigate('Login')}}>
+        <Text style={{color:'blue', marginTop:6}}>
+          already have an account? Login!
+        </Text>
+      </TouchableOpacity>
       
        </ScrollView>
     </View>
